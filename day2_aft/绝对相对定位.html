@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>相对绝对定位</title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#waibu{
+				width: 400px;
+				height: 400px;
+				background: blue;
+				position: relative;
+			}
+			#main{
+				width: 200px;
+				height: 200px;
+				background: red;
+				/*一般情况下，绝对定位配合横向、纵向偏移量进行使用*/
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+			#main1{
+				width: 200px;
+				height: 200px;
+				background: yellow;
+				/*相对定位：相对于原来的位置进行的偏移*/
+				position: relative;
+				/*top: 50px;
+				left: 50px;*/
+			}
+		</style>
+	</head>
+	<!--、
+		总结：在页面布局时，一般使用绝对定位对容器进行偏移，不要用相对定位来偏移
+			绝对定位偏移以什么为基准：查看外部容器中，是否设置position属性,如果有，按外部容器为基准进行偏移，
+			如果没有，按浏览器为基准进行偏移
+		不成文的规定：一般在页面进行布局时，将父容器设置为相对，将子容器设置为绝对
+	-->
+	<body>
+		<div id="waibu">
+			<div id="main">
+			
+			</div>
+		</div>
+		
+		<!--<div id="main1">
+			
+		</div>-->
+	</body>
+</html>

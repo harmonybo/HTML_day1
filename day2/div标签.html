@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			div：块级标签，独占一行
+			页面布局时，一般使用div容器来进行布局
+			想要将多个div布局到同一行时，必须在每一个div中，设置float漂浮属性
+			margin-left:设置左外边距  
+		-->
+		<!--<div style="width: 200px;height: 200px;background: yellowgreen;color: white;float: left;">
+			今天好热
+		</div>
+		<div style="width: 200px;height: 200px;background: darkgoldenrod;color: white;float: right;">
+			最近都好热 
+		</div>
+		<div style="width: 300px;height: 400px;background: yellow;">
+		</div>-->
+		<!--正确布局方式-->
+		<div style="width: 1200px;height: 200px;background: red;">
+			<div style="width: 200px;height: 200px;background: yellowgreen;float: left;">
+				
+			</div>
+			<div style="width: 200px;height: 200px;background: yellow;float: left;margin-left: 460px;">
+				
+			</div>
+		</div>
+		<div style="width: 100px;height: 100px;background: blue;">
+			
+		</div>
+	</body>
+</html>
